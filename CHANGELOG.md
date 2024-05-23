@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.2.2](https://github.com/alelltech/azdo-utils-kit/compare/v4.2.1...v4.2.2) (2024-05-23)
+
+
+### Others
+
+* **release:** 4.2.1 ([0a25a8c](https://github.com/alelltech/azdo-utils-kit/commit/0a25a8c6c1d8d8b2ecb6ab517f2ed4a982b88318))
+
 ### [4.2.1](https://github.com/alelltech/azdo-utils-kit/compare/v4.2.0...v4.2.1) (2024-05-23)
 
 
