@@ -14,11 +14,16 @@ async function run() {
     const sourceType: SourceType = getInput('sourceType', true) as any;
     const dest = getInput('dest', true);
     const destType: DestType = getInput('destType', true) as any;
+    const direction: 'encode' | 'decode' = getInput('direction', true) as any;
 
-    if(!source || !dest) return
+    if(!source || !dest || !direction) return
 
     const sourceContent = await getContent(sourceType, source);
-    setContent(destType, dest, Buffer.from(sourceContent).toString('base64'));
+    if(direction === 'encode'){
+      setContent(destType, dest, Buffer.from(sourceContent).toString('base64'));
+    } else {
+      setContent(destType, dest, Buffer.from(sourceContent, 'base64').toString('utf-8'));
+    }
 
   }
   catch (err: any) {

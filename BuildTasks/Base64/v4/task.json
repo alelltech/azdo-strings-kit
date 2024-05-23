@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
-  "id": "153b8e00-dc37-4e54-ad1f-137122bde8e1",
+  "id": "6e66625f-c066-4a8d-9239-c6e4453f3ac2",
   "name": "UtilsKitBase64",
   "friendlyName": "Base64",
   "description": "Base64 transform",
@@ -13,56 +13,66 @@
     "Patch": 9
   },
   "instanceNameFormat": "Base64 ${sourceType}",
+  "groups": [{
+    "name": "advanced",
+    "displayName": "Advanced",
+    "isExpanded": false
+  }],
   "inputs": [
+    {
+      "name": "direction",
+      "label": "Direction type encode/decode",
+      "required": true,
+      "defaultValue": "encode",
+      "type": "pickList",
+      "options": {
+        "encode": "encode",
+        "decode": "decode"
+      },
+      "groupName": "advanced"
+    },
     {
       "name": "sourceType",
       "label": "Type of source input",
       "required": true,
-      "defaultValue": "file",
+      "defaultValue": "text",
       "type": "pickList",
       "options": {
         "file": "file",
         "var": "var",
         "text": "text"
       },
-      "helpMarkDown": "",
-      "aliases": [
-        "type",
-        "kind"
-      ]
+      "helpMarkDown": "Indicate type of **source input reference**, can be **File**, **Variable** or **Raw Text Expression**",
+      "groupName": "advanced"
     },
     {
       "name": "source",
-      "label": "Source of JSON contents",
+      "label": "Source input reference or expression",
       "required": true,
       "defaultValue": "",
       "type": "string",
-      "helpMarkDown": "",
-      "aliases": [
-        "origin",
-        "src"
-      ]
+      "helpMarkDown": ""
     },
     {
       "name": "destType",
       "label": "Type of destination output",
       "required": true,
-      "defaultValue": "file",
+      "defaultValue": "var",
       "type": "pickList",
       "options": {
         "file": "file",
         "var": "var",
         "text": "text"
       },
-      "helpMarkDown": ""
+      "helpMarkDown": "Indicate type of **destination output reference**, can be **File**, **Variable** or **Raw Text Expression**",
+      "groupName": "advanced"
     },
     {
       "name": "dest",
-      "label": "Destination output",
+      "label": "Destination output reference or expression",
       "required": true,
       "defaultValue": "",
-      "type": "string",
-      "helpMarkDown": ""
+      "type": "string"
     }
   ],
   "execution": {

@@ -8,7 +8,8 @@ setIn({
   source: 'my single content',
   sourceType: 'text',
   dest: "TESTE64",
-  destType: 'var'
+  destType: 'var',
+  direction: 'encode'
 })
 
 _loadData();
