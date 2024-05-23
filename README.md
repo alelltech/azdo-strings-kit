@@ -2,11 +2,11 @@
 
 This extension provides 1 task!
 
-* `HttpAxiosRequest`
+* `Base64`
 
 ## Features
 
-* Http Request with `Axios`.
+* Encode/Decode Base64 contents from/to **File**, **Variable** or **Raw Text expression**.
 
 ## Basic queries syntax
 
@@ -17,22 +17,19 @@ This extension provides 1 task!
 - job:
   ...
   steps:
-  - task: HttpAxiosRequest@4
-    displayName: "Extract catalog-info.yaml info"
+  - task: Base64@4
+    displayName: "Encode"
     inputs:
-      url: https://
+      source: mycontent
+      dest: MY_ENCODED_64_VAR
+
+- task: Base64@4
+    displayName: "Encode"
+    inputs:
       sourceType: file
-      queries: |
-        # Extract results to variables
-        var NAME = .metadata.name | downcase
-        var KIND = .kind
-
-        # Just print results
-        echo .kind
-
-        # Extract results to JSON file
-        file ./foo/bar.json = .metadata.annotations
-
+      source: ./my-file.txt
+      destType: var
+      dest: MY_ENCODED_64_VAR
 
 ```
 
