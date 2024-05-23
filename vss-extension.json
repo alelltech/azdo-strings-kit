@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json.schemastore.org/vss-extension.json",
+  "manifestVersion": 1,
+  "id": "utils-kit",
+  "version": "4.1.11",
+  "name": "Utility Kit",
+  "description": "Utils tasks",
+  "publisher": "alelltech",
+  "public": true,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "categories": [
+    "Azure Pipelines"
+  ],
+  "icons": {
+    "default": "images/vss.png"
+  },
+  "screenshots": [],
+  "content": {
+    "details": {
+      "path": "README.md"
+    },
+    "license": {
+      "path": "LICENSE"
+    }
+  },
+  "links": {
+    "support": {
+      "uri": "https://github.com/alelltech/azdo-utils-kit/issues"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/alelltech/azdo-utils-kit"
+  },
+  "tags": [
+    "java",
+    "azure devops",
+    "pipeline",
+    "task"
+  ],
+  "files": [
+    {
+      "path": "BuildTasks/Base64"
+    },
+    {
+      "path": "images",
+      "addressable": true
+    }
+  ],
+  "contributions": [
+    {
+      "id": "UtilsKitBase64",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "BuildTasks/Base64"
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "153b8e00-dc37-4e54-ad1f-137122bde8e1",
+  "name": "UtilsKitBase64",
+  "friendlyName": "Base64",
+  "description": "Base64 transform",
+  "helpMarkDown": "",
+  "category": "Utility",
+  "author": "alelltech",
+  "version": {
+    "Major": 4,
+    "Minor": 1,
+    "Patch": 9
+  },
+  "instanceNameFormat": "Base64 ${sourceType}",
+  "inputs": [
+    {
+      "name": "sourceType",
+      "label": "Type of source input",
+      "required": true,
+      "defaultValue": "file",
+      "type": "pickList",
+      "options": {
+        "file": "file",
+        "var": "var",
+        "text": "text"
+      },
+      "helpMarkDown": "",
+      "aliases": [
+        "type",
+        "kind"
+      ]
+    },
+    {
+      "name": "source",
+      "label": "Source of JSON contents",
+      "required": true,
+      "defaultValue": "",
+      "type": "string",
+      "helpMarkDown": "",
+      "aliases": [
+        "origin",
+        "src"
+      ]
+    },
+    {
+      "name": "destType",
+      "label": "Type of destination output",
+      "required": true,
+      "defaultValue": "file",
+      "type": "pickList",
+      "options": {
+        "file": "file",
+        "var": "var",
+        "text": "text"
+      },
+      "helpMarkDown": ""
+    },
+    {
+      "name": "dest",
+      "label": "Destination output",
+      "required": true,
+      "defaultValue": "",
+      "type": "string",
+      "helpMarkDown": ""
+    }
+  ],
+  "execution": {
+    "Node16": {
+      "target": "Base64/v4/Base64.js"
+    }
+  }
+}

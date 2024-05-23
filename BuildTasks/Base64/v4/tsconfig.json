@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.v4.json",
+  "compilerOptions": {
+      "outDir": "./",
+      "sourceRoot": "./"
+  },
+  "files": [
+      "Base64.ts"
+  ]
+}
