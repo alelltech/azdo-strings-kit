@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/vss-extension.json",
   "manifestVersion": 1,
   "id": "utils-kit",
-  "version": "4.2.4",
+  "version": "4.2.5",
   "name": "Utility Kit",
   "description": "Utils tasks",
   "publisher": "alelltech",
@@ -37,7 +37,6 @@
     "uri": "https://github.com/alelltech/azdo-utils-kit"
   },
   "tags": [
-    "java",
     "azure devops",
     "pipeline",
     "task"
