@@ -69,8 +69,7 @@
     },
     {
       "name": "dest",
-      "label": "Destination output reference or expression",
-      "required": false,
+      "label": "Destination output reference or expression (not required)",
       "defaultValue": "",
       "type": "string"
     }
