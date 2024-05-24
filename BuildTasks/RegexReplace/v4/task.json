@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
   "id": "1a070330-1bf5-481b-af44-183f17a4efdc",
-  "name": "UtilsKitRegexReplace",
+  "name": "RegexReplace",
   "friendlyName": "RegexReplace",
   "description": "Regex Replace",
   "helpMarkDown": "",
