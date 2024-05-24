@@ -20,18 +20,6 @@
   }],
   "inputs": [
     {
-      "name": "direction",
-      "label": "Direction type encode/decode",
-      "required": true,
-      "defaultValue": "encode",
-      "type": "pickList",
-      "options": {
-        "encode": "encode",
-        "decode": "decode"
-      },
-      "groupName": "advanced"
-    },
-    {
       "name": "sourceType",
       "label": "Type of source input",
       "required": true,
