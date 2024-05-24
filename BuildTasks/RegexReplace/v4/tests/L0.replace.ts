@@ -7,14 +7,15 @@ import { _loadData } from 'azure-pipelines-task-lib/internal'
 setIn({
   source: 'my single content',
   sourceType: 'text',
-  dest: "TESTE64",
+  dest: "TESTE_REPLACED",
   destType: 'var',
-  direction: 'encode'
+  regex: '/(my )single( content)/ig',
+  substitution: '$1awesome$2'
 })
 
 _loadData();
 
-let taskPath = joinPath(__dirname, '..', `Base64.${EXT}`);
+let taskPath = joinPath(__dirname, '..', `RegexReplace.${EXT}`);
 let runner: TaskMockRunner = new TaskMockRunner(taskPath);
 
 runner.run();
