@@ -1,10 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/vss-extension.json",
   "manifestVersion": 1,
-  "id": "utils-kit",
-  "version": "4.2.12",
-  "name": "Utility Kit",
-  "description": "Utils tasks",
+  "id": "string-kit",
+  "version": "4.2.13",
+  "name": "StringKit",
+  "description": "Strings Kit",
   "publisher": "alelltech",
   "public": true,
   "targets": [
@@ -29,17 +29,19 @@
   },
   "links": {
     "support": {
-      "uri": "https://github.com/alelltech/azdo-utils-kit/issues"
+      "uri": "https://github.com/alelltech/azdo-string-kit/issues"
     }
   },
   "repository": {
     "type": "git",
-    "uri": "https://github.com/alelltech/azdo-utils-kit"
+    "uri": "https://github.com/alelltech/azdo-string-kit"
   },
   "tags": [
     "azure devops",
     "pipeline",
-    "task"
+    "task",
+    "base64",
+    "regex replace"
   ],
   "files": [
     {
