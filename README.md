@@ -33,13 +33,13 @@ This extension provides 1 task!
       destType: var
       dest: MY_ENCODED_64_VAR
 
-- task: Base64@4
-    displayName: "Encode"
-    inputs:
-      sourceType: file
-      source: ./my-file.txt
-      destType: var
-      dest: MY_ENCODED_64_VAR
+- task: RegexReplace@4
+  inputs:
+    sourceType: 'text'
+    source: 'hello world'
+    destType: 'text'
+    regex: '/(hello )(world)/ig'
+    substitution: '$1 frank $2'
 
 ```
 
