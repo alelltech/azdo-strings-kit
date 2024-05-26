@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
-  "id": "6e66625f-c066-4a8d-9239-c6e4453f3ac2",
+  "id": "7775ad48-0f07-43ba-a8e9-3244c14f3d2c",
   "name": "Base64",
   "friendlyName": "Base64",
-  "description": "Base64 transform",
+  "description": "Encode / Decode Base64 contents",
   "helpMarkDown": "",
   "category": "Utility",
   "author": "alelltech",

@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
-  "id": "1a070330-1bf5-481b-af44-183f17a4efdc",
+  "id": "e33c1b26-ae88-4a81-96eb-96ca9fc69693",
   "name": "RegexReplace",
   "friendlyName": "RegexReplace",
   "description": "Regex Replace",
