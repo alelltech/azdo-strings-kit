@@ -2,9 +2,9 @@
   "$schema": "https://json.schemastore.org/vss-extension.json",
   "manifestVersion": 1,
   "id": "string-kit",
-  "version": "4.2.14",
+  "version": "4.2.15",
   "name": "Strings Kit",
-  "description": "Strings Kit",
+  "description": "Strings Kit provides tasks to manupulate strings contents from different kind sources.",
   "publisher": "alelltech",
   "public": true,
   "targets": [
