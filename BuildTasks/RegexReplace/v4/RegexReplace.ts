@@ -4,8 +4,8 @@ import {
   setResult,
   setVariable
 } from 'azure-pipelines-task-lib/task';
-import { DestType, SourceType, getContent, setContent } from '../../Common/v4/SourceContent';
-
+// import { DestType, SourceType, getContent, setContent } from '../../Common/v4/SourceContent';
+import {DestType, getContent, setContent, SourceType} from '@alell/azure-pipelines-task-commons';
 
 async function run() {
   try {
