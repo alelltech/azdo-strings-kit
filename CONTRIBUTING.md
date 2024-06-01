@@ -62,7 +62,7 @@ npm run new:task
 
 ## Full publish scripts
 ```bash
-npm run clean && npm i && npm run coverage && npm run release && npm run package
+npm run clean && npm i && npm run coverage && npm run release:full && npm run package
 # or
 npm run coverage && npm run release:full && npm run package
 
