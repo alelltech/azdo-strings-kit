@@ -17,7 +17,14 @@ module.exports = {
     { "filename": "package.json", "type": "json" },
     { "filename": "vss-extension.json", "type": "json" },
 
-    { "filename": "BuildTasks/Base64/v4/package.json", "type": "json" }
+    { "filename": "BuildTasks/Base64/v4/package.json", "type": "json" },
+    { "filename": "BuildTasks/Base64/v4/task.json", "updater": "task-version.js" },
+
+    { "filename": "BuildTasks/RegexReplace/v4/package.json", "type": "json" },
+    { "filename": "BuildTasks/RegexReplace/v4/task.json", "updater": "task-version.js" },
+
+    { "filename": "BuildTasks/Nunjucks/v4/package.json", "type": "json" },
+    { "filename": "BuildTasks/Nunjucks/v4/task.json", "updater": "task-version.js" },
 
   ]
 }
