@@ -3,7 +3,7 @@ import * as _ from 'underscore.string';
 
 export const _env = new Environment(null, {
   tags: {
-    variableStart: '${{'
+    variableStart: '{{'
   },
 
 })

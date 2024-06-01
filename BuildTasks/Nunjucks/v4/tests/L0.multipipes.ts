@@ -5,7 +5,7 @@ import { EXT } from '../../../Common/v4/RuntimeUtil';
 import { _loadData } from 'azure-pipelines-task-lib/internal'
 
 setIn({
-  source: '${{ MY_ENV | _classify }}',
+  source: '{{ MY_ENV | _classify }}',
   sourceType: 'text',
   dest: "TESTE_REPLACED",
   destType: 'var'
