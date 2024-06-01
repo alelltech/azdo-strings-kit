@@ -34,7 +34,7 @@ describe(`RegexReplace Suite`, () => {
     assert(runner.invokedToolCount == 0, "should have only run docker 2 times: " + runner.invokedToolCount);
     assert(runner.stderr.length == 0, "should not have written to stderr=" + runner.stderr);
     assert(runner.succeeded, "task should have succeeded");
-    // assert(runner.warningIssues.length == 1, "task should have 1 warning");
+    assert(runner.warningIssues.length == 0, "task should have no warning");
     assert(runner.stdout.match(/##vso\[task.setvariable variable=TESTE_REPLACED[^\]]+\]my awesome content/), "should have setvariable expression of 'TESTE_REPLACED' with 'my awesome content'.");
   });
 
