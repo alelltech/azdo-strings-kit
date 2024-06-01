@@ -45,6 +45,9 @@
   ],
   "files": [
     {
+      "path": "BuildTasks/Nunjucks"
+    },
+    {
       "path": "BuildTasks/RegexReplace"
     },
     {
@@ -56,6 +59,16 @@
     }
   ],
   "contributions": [
+    {
+      "id": "StringKitNunjucks",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "BuildTasks/Nunjucks"
+      }
+    },
     {
       "id": "RegexReplace",
       "type": "ms.vss-distributed-task.task",

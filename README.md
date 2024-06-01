@@ -4,10 +4,13 @@ This extension provides 1 task!
 
 * `Base64`
 * `RegexReplace`
+* `Nunjucks`
+
 ## Features
 
 * Encode/Decode Base64 contents from/to **File**, **Variable** or **Raw Text expression**.
 * Replace contents using ECMAScript `Regex` expressions from/to **File**, **Variable** or **Raw Text expression**.
+* Proccess [`Nunjucks`](https://mozilla.github.io/nunjucks/templating.html) templates from/to **File**, **Variable** or **Raw Text expression** with [`underscore.string`](https://www.npmjs.com/package/underscore.string) filters **esteroids**.
 
 
 ## Basic queries syntax
@@ -41,6 +44,13 @@ This extension provides 1 task!
     regex: '/(hello )(world)/ig'
     substitution: '$1 frank $2'
 
+- task: Nunjucks@4
+  inputs:
+    sourceType: 'text'
+    source: '${{ MY_ENV | _classify }}'
+    destType: 'text'
+  env:
+    MY_ENV: my new text
 ```
 
 ## Help us
