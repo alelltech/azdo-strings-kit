@@ -9,15 +9,17 @@
   "author": "alelltech",
   "version": {
     "Major": 4,
-    "Minor": 1,
-    "Patch": 9
+    "Minor": 3,
+    "Patch": 5
   },
   "instanceNameFormat": "Regex Replace",
-  "groups": [{
-    "name": "advanced",
-    "displayName": "Advanced",
-    "isExpanded": false
-  }],
+  "groups": [
+    {
+      "name": "advanced",
+      "displayName": "Advanced",
+      "isExpanded": false
+    }
+  ],
   "inputs": [
     {
       "name": "sourceType",
@@ -74,7 +76,6 @@
       "defaultValue": "",
       "type": "string",
       "helpMarkDown": "ECMAScript Regex `substiturion` expression you can build on [regex101.com](regex101.com)"
-
     }
   ],
   "execution": {

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.3.5](https://github.com/alelltech/azdo-strings-kit/compare/v4.3.4...v4.3.5) (2024-06-01)
+
+
+### Others
+
+* **release:** 4.3.4 ([9ae09c2](https://github.com/alelltech/azdo-strings-kit/commit/9ae09c2be585fb735e7d0274a644c356b4431232))
+
 ### [4.3.4](https://github.com/alelltech/azdo-strings-kit/compare/v4.3.3...v4.3.4) (2024-06-01)
 
 
