@@ -1,6 +1,6 @@
 import * as assert from "assert";
 import { _loadData } from "azure-pipelines-task-lib/internal";
-import { getRuntimePath } from '../RuntimeUtil';
+import { getRuntimePath } from '@alell/azure-pipelines-task-commons';
 import { _env } from '../Nunjucks';
 
 const initial_env = Object.keys(process.env).reduce((p, k) => {

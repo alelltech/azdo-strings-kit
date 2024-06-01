@@ -5,7 +5,7 @@ import {
   setVariable
 } from 'azure-pipelines-task-lib/task';
 import { DestType, SourceType, getContent, setContent } from '@alell/azure-pipelines-task-commons';
-
+import { isCommon as _isCommon } from '../../Common/v4/Common';
 
 async function run() {
   try {
