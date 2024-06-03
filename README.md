@@ -11,10 +11,17 @@ This extension provides 1 task!
 * Encode/Decode Base64 contents from/to **File**, **Variable** or **Raw Text expression**.
 * Replace contents using ECMAScript `Regex` expressions from/to **File**, **Variable** or **Raw Text expression**.
 * Proccess [`Nunjucks`](https://mozilla.github.io/nunjucks/templating.html) templates from/to **File**, **Variable** or **Raw Text expression** with [`underscore.string`](https://www.npmjs.com/package/underscore.string) filters **esteroids**.
+* Proccess `Nunjucks` on `inline` operations with [`underscore.string`](https://www.npmjs.com/package/underscore.string) filters **esteroids**.
 
+### Plus embeded filters
+* pascalCase
+* base64
+* encode64
+* decode64
+* encodeHex
+* decodeHex
 
 ## Basic queries syntax
-
 
 ## Usage sample
 
@@ -51,6 +58,14 @@ This extension provides 1 task!
     destType: 'text'
   env:
     MY_ENV: my new text
+
+- task: NunjucksInline@4
+  inputs:
+    sourceType: 'text'
+    source: |
+      var pascal_name = BUILD_REPOSITORY_NAME | pascalCase
+      var base64 = BUILD_REPOSITORY_NAME | encode64
+      echo BUILD_REPOSITORY_NAME | pascalCase
 ```
 
 ## Help us
