@@ -1,6 +1,6 @@
 {
   "name": "azdo-utils",
-  "version": "4.3.6",
+  "version": "4.4.0",
   "scripts": {
     "debug": "ts-node ",
     "new:task": "ts-node .scripts/new-task.ts",

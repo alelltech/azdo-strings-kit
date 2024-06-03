@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.4.0](https://github.com/alelltech/azdo-strings-kit/compare/v4.3.6...v4.4.0) (2024-06-03)
+
+
+### Features
+
+* improves more nunjucks filter functions ([d5d718d](https://github.com/alelltech/azdo-strings-kit/commit/d5d718d2e873b06671c41198a08552b4ae49b2d1))
+
+
+### Bug Fixes
+
+* testar tambem alertas de execucao ([10ee0e9](https://github.com/alelltech/azdo-strings-kit/commit/10ee0e9ae9b1bbb9c230e4a20a2df13b8de02cbd))
+
+
+### Others
+
+* **release:** 4.3.6 ([e1a5eed](https://github.com/alelltech/azdo-strings-kit/commit/e1a5eed28784f70986891e29f8424fc4ba144834))
+
 ### [4.3.6](https://github.com/alelltech/azdo-strings-kit/compare/v4.3.5...v4.3.6) (2024-06-01)
 
 

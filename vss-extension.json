@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/vss-extension.json",
   "manifestVersion": 1,
   "id": "string-kit",
-  "version": "4.3.6",
+  "version": "4.4.0",
   "name": "Strings Kit",
   "description": "Strings Kit provides tasks to manupulate strings contents from different kind sources.",
   "publisher": "alelltech",
@@ -47,6 +47,9 @@
   ],
   "files": [
     {
+      "path": "BuildTasks/NunjucksInline"
+    },
+    {
       "path": "BuildTasks/Nunjucks"
     },
     {
@@ -62,7 +65,17 @@
   ],
   "contributions": [
     {
-      "id": "StringKitNunjucks",
+      "id": "NunjucksInline",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "BuildTasks/NunjucksInline"
+      }
+    },
+    {
+      "id": "Nunjucks",
       "type": "ms.vss-distributed-task.task",
       "targets": [
         "ms.vss-distributed-task.tasks"

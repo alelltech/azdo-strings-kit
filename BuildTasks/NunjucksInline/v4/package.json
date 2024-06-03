@@ -1,5 +1,5 @@
 {
-  "name": "string-kit.base64",
+  "name": "azdo-utils-nunjucks-inline",
   "version": "4.4.0",
   "scripts": {
     "clean": "tsc --build --clean",
@@ -15,12 +15,12 @@
   "dependencies": {
     "azure-pipelines-task-lib": "^5.0.0-preview.0",
     "azure-pipelines-tool-lib": "^2.0.7",
-    "@alell/azure-pipelines-task-commons": "^1.0.16",
-    "js-yaml": "3.13.1",
-    "jsonpath-plus": "7.2.0"
+    "@alell/azure-pipelines-task-commons": "^1.1.2",
+    "nunjucks": "3.2.4",
+    "underscore.string": "^3.3.6"
   },
   "devDependencies": {
-    "@types/js-yaml": "^4.0.1",
+    "@types/nunjucks": "^3.2.6",
     "@types/jsdom": "^16.2.14",
     "@types/mocha": "^10.0.6",
     "@types/node": "^20.10.5",

@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
-  "id": "79e0dbfb-64b4-4ea7-8421-709cd4bb7091",
-  "name": "Nunjucks",
-  "friendlyName": "Nunjucks",
-  "description": "Nunjucks",
+  "id": "b8e62ff6-508c-4c47-b5ad-2661623c2400",
+  "name": "StringKitNunjucksInline",
+  "friendlyName": "Nunjucks Inline",
+  "description": "Nunjucks Inline",
   "helpMarkDown": "",
   "category": "Utility",
   "author": "alelltech",
@@ -12,7 +12,7 @@
     "Minor": 4,
     "Patch": 0
   },
-  "instanceNameFormat": "Nunjucks",
+  "instanceNameFormat": "Nunjucks Inline",
   "groups": [
     {
       "name": "advanced",
@@ -39,34 +39,14 @@
       "name": "source",
       "label": "Source input reference or expression",
       "required": true,
-      "defaultValue": "",
+      "defaultValue": "var pascal_name = BUILD_REPOSITORY_NAME | pascalCase \n echo BUILD_REPOSITORY_NAME | pascalCase",
       "type": "string",
       "helpMarkDown": ""
-    },
-    {
-      "name": "destType",
-      "label": "Type of destination output",
-      "required": true,
-      "defaultValue": "var",
-      "type": "pickList",
-      "options": {
-        "file": "file",
-        "var": "var",
-        "text": "text"
-      },
-      "helpMarkDown": "Indicate type of **destination output reference**, can be **File**, **Variable** or **Raw Text Expression**",
-      "groupName": "advanced"
-    },
-    {
-      "name": "dest",
-      "label": "Destination output reference or expression",
-      "defaultValue": "",
-      "type": "string"
     }
   ],
   "execution": {
     "Node16": {
-      "target": "Nunjucks/v4/Nunjucks.js"
+      "target": "NunjucksInline/v4/NunjucksInline.js"
     }
   }
 }
