@@ -10,7 +10,7 @@
   "version": {
     "Major": 4,
     "Minor": 4,
-    "Patch": 2
+    "Patch": 3
   },
   "instanceNameFormat": "Nunjucks Inline",
   "groups": [
@@ -41,7 +41,11 @@
       "required": true,
       "defaultValue": "var pascal_name = BUILD_REPOSITORY_NAME | pascalCase \n echo BUILD_REPOSITORY_NAME | pascalCase",
       "type": "string",
-      "helpMarkDown": ""
+      "helpMarkDown": "",
+      "properties": {
+        "resizable": true,
+        "rows": "4"
+      }
     }
   ],
   "execution": {
