@@ -10,7 +10,7 @@
   "version": {
     "Major": 4,
     "Minor": 4,
-    "Patch": 13
+    "Patch": 14
   },
   "instanceNameFormat": "Regex Replace",
   "groups": [
