@@ -1,6 +1,6 @@
 {
   "name": "azdo-utils-regex-replace",
-  "version": "4.4.12",
+  "version": "4.4.13",
   "scripts": {
     "clean": "tsc --build --clean",
     "compile": "tsc",
