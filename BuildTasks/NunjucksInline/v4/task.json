@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
   "id": "b8e62ff6-508c-4c47-b5ad-2661623c2400",
-  "name": "StringKitNunjucksInline",
+  "name": "NunjucksInline",
   "friendlyName": "Nunjucks Inline",
   "description": "Nunjucks Inline",
   "helpMarkDown": "",
@@ -10,7 +10,7 @@
   "version": {
     "Major": 4,
     "Minor": 4,
-    "Patch": 6
+    "Patch": 7
   },
   "instanceNameFormat": "Nunjucks Inline",
   "groups": [
@@ -39,7 +39,7 @@
       "name": "source",
       "label": "Source input reference or expression",
       "required": true,
-      "defaultValue": "var pascal_name = BUILD_REPOSITORY_NAME | pascalCase \n echo BUILD_REPOSITORY_NAME | pascalCase",
+      "defaultValue": "echo BUILD_REPOSITORY_NAME | pascalCase",
       "type": "string",
       "helpMarkDown": "",
       "properties": {
