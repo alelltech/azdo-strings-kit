@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
-  "id": "79e0dbfb-64b4-4ea7-8421-709cd4bb7091",
+  "id": "944d7417-082f-4d17-89ac-49ae645ede1c",
   "name": "NunjucksRender",
   "friendlyName": "NunjucksRender",
   "description": "NunjucksRender",
