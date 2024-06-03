@@ -5,7 +5,14 @@ import {
   setVariable
 } from 'azure-pipelines-task-lib/task';
 // import { DestType, SourceType, getContent, setContent } from '../../Common/v4/SourceContent';
-import {DestType, getContent, setContent, SourceType} from '@alell/azure-pipelines-task-commons';
+import {
+  DestType,
+  getContent,
+  setContent,
+  SourceType,
+  parseScript,
+  executeScript
+} from '@alell/azure-pipelines-task-commons';
 import { isCommon as _isCommon } from '../../Common/v4/Common';
 import { _env } from '../../Common/v4/Nunjucks';
 
@@ -14,17 +21,20 @@ async function run() {
 
     const source = getInput('source', true);
     const sourceType: SourceType = getInput('sourceType', true) as any;
-    const dest = getInput('dest', false);
-    const destType: DestType = getInput('destType', true) as any;
-
     const sourceContent = await getContent(sourceType, source);
 
-    const result = _env.renderString(sourceContent, process.env);
 
-    setContent(destType, dest, result);
+    const queries = parseScript(sourceContent);
 
-  }
-  catch (err: any) {
+    executeScript(queries, async (script, _query) => {
+      let s = script
+      if (!s.startsWith('{{')) s = `\{\{${s}`;
+      if (!s.endsWith('}}')) s = `${s}\}\}`;
+
+      return _env.renderString(s, process.env);
+    })
+
+  } catch (err: any) {
     setResult(TaskResult.Failed, err.message);
   }
 }

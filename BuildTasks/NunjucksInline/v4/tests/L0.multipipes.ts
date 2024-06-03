@@ -4,15 +4,18 @@ import { setIn, EXT } from '@alell/azure-pipelines-task-commons';
 import { _loadData } from 'azure-pipelines-task-lib/internal'
 
 setIn({
-  source: '{{ MY_ENV | _classify }}',
-  sourceType: 'text',
-  dest: "TESTE_REPLACED",
-  destType: 'var'
-})
-process.env.MY_ENV = 'my new text'
+  source: [
+    'var pascal_name = BUILD_REPOSITORY_NAME | pascalCase',
+    'echo BUILD_REPOSITORY_NAME | pascalCase',
+  ].join('\n'),
+  sourceType: 'text'
+});
+
+process.env.BUILD_REPOSITORY_NAME = 'teste-amind-pipeline';
+
 _loadData();
 
-let taskPath = joinPath(__dirname, '..', `Nunjucks.${EXT}`);
+let taskPath = joinPath(__dirname, '..', `NunjucksInline.${EXT}`);
 let runner: TaskMockRunner = new TaskMockRunner(taskPath);
 
 runner.run();

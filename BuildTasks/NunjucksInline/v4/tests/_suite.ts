@@ -35,7 +35,7 @@ describe(`Nunjucks Suite`, () => {
     assert(runner.stderr.length == 0, "should not have written to stderr=" + runner.stderr);
     assert(runner.succeeded, "task should have succeeded");
     // assert(runner.warningIssues.length == 1, "task should have 1 warning");
-    assert(runner.stdout.match(/##vso\[task.setvariable variable=TESTE_REPLACED[^\]]+\]MyNewText/), "should have setvariable expression of 'TESTE_REPLACED' with 'MyNewText'.");
+    assert(runner.stdout.match(/##vso\[task.setvariable variable=pascal_name[^\]]+\]TesteAmindPipeline/), "should have setvariable expression of 'pascal_name' with 'TesteAmindPipeline'.");
   });
 
 

@@ -87,7 +87,8 @@ async function run(){
       [
         `$1$2`,
         `$1  {`,
-        `$1    "id": "${toPascalCase(rootVssExtensionJson.id)}${pascalName}",`,
+        // `$1    "id": "${toPascalCase(rootVssExtensionJson.id)}${pascalName}",`,
+        `$1    "id": "${pascalName}",`,
         `$1    "type": "ms.vss-distributed-task.task",`,
         `$1    "targets": [`,
         `$1      "ms.vss-distributed-task.tasks"`,
