@@ -132,7 +132,17 @@ describe(`Nunjucks Suite`, () => {
         // '_toBool':          _env.renderString("{{ value | _toBool(str, trueValues, falseValues) }}", {value: '   my sample value   '}),
         // '_camelcase':       _env.renderString("{{ value | _camelcase(str, decapitalize) }}", {value: '   my sample value   '}),
         // '_mapChars':        _env.renderString("{{ value | _mapChars(str, callback) }}", {value: '   my sample value   '}),
+
+        // customs and aliases
+
+        'encode64':    _env.renderString("{{ value | encode64 }}", {value: '   my sample value   '}),
+        'decode64':    _env.renderString("{{ value | decode64 }}", {value: 'ICAgbXkgc2FtcGxlIHZhbHVlICAg'}),
+
+        'encodeHex':    _env.renderString("{{ value | encodeHex }}", {value: '   my sample value   '}),
+        'decodeHex':    _env.renderString("{{ value | decodeHex }}", {value: '2020206d792073616d706c652076616c7565202020'}),
       }
+
+
       // _env.renderString("{{ 'teste spaced name' | }}")
       assert(results, 'results must be defined');
       assert(results._isBlank === 'false', '_isBlank must be false');
