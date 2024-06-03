@@ -5,6 +5,6 @@
       "sourceRoot": "./"
   },
   "files": [
-      "Nunjucks.ts"
+      "NunjucksRender.ts"
   ]
 }

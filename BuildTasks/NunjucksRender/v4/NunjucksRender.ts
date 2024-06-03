@@ -12,9 +12,9 @@ import { _env } from '../../Common/v4/Nunjucks';
 async function run() {
   try {
 
-    const source = getInput('source', true);
+    const source = getInput('source', true) || "";
     const sourceType: SourceType = getInput('sourceType', true) as any;
-    const dest = getInput('dest', false);
+    const dest = getInput('dest', false) || "";
     const destType: DestType = getInput('destType', true) as any;
 
     const sourceContent = await getContent(sourceType, source);

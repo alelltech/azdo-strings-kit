@@ -1,5 +1,5 @@
 {
-  "name": "azdo-utils-nunjucks",
+  "name": "azdo-utils-nunjucks-render",
   "version": "4.4.14",
   "scripts": {
     "clean": "tsc --build --clean",

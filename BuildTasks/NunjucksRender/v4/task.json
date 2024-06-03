@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
   "id": "79e0dbfb-64b4-4ea7-8421-709cd4bb7091",
-  "name": "Nunjucks",
-  "friendlyName": "Nunjucks",
-  "description": "Nunjucks",
+  "name": "NunjucksRender",
+  "friendlyName": "NunjucksRender",
+  "description": "NunjucksRender",
   "helpMarkDown": "",
   "category": "Utility",
   "author": "alelltech",
@@ -66,7 +66,7 @@
   ],
   "execution": {
     "Node16": {
-      "target": "Nunjucks/v4/Nunjucks.js"
+      "target": "NunjucksRender/v4/NunjucksRender.js"
     }
   }
 }

@@ -12,7 +12,7 @@ setIn({
 process.env.MY_ENV = 'my new text'
 _loadData();
 
-let taskPath = joinPath(__dirname, '..', `Nunjucks.${EXT}`);
+let taskPath = joinPath(__dirname, '..', `NunjucksRender.${EXT}`);
 let runner: TaskMockRunner = new TaskMockRunner(taskPath);
 
 runner.run();
