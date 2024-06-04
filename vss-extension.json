@@ -47,6 +47,9 @@
   ],
   "files": [
     {
+      "path": "BuildTasks/UUID"
+    },
+    {
       "path": "BuildTasks/NunjucksInline"
     },
     {
@@ -64,6 +67,16 @@
     }
   ],
   "contributions": [
+    {
+      "id": "UUID",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "BuildTasks/UUID"
+      }
+    },
     {
       "id": "NunjucksInline",
       "type": "ms.vss-distributed-task.task",

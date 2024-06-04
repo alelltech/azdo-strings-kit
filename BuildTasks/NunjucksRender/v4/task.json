@@ -3,8 +3,8 @@
   "id": "944d7417-082f-4d17-89ac-49ae645ede1c",
   "name": "NunjucksRender",
   "friendlyName": "NunjucksRender",
-  "description": "NunjucksRender",
-  "helpMarkDown": "",
+  "description": "Render template using Nunjucks + steroids",
+  "helpMarkDown": "Render template using [Nunjucks](https://mozilla.github.io/nunjucks) + steroids, see [underscore.string](https://github.com/esamattis/underscore.string/blob/master/README.markdown).",
   "category": "Utility",
   "author": "alelltech",
   "version": {
@@ -12,7 +12,7 @@
     "Minor": 4,
     "Patch": 14
   },
-  "instanceNameFormat": "Nunjucks",
+  "instanceNameFormat": "NunjucksRender",
   "groups": [
     {
       "name": "advanced",

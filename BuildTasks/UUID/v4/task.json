@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "0ae126a8-4def-4da8-8ec6-b3bea3051cae",
+  "name": "UUID",
+  "friendlyName": "UUID",
+  "description": "Generate UUIDs to variable series",
+  "helpMarkDown": "",
+  "category": "Utility",
+  "author": "alelltech",
+  "version": {
+    "Major": 4,
+    "Minor": 4,
+    "Patch": 18
+  },
+  "instanceNameFormat": "UUID ${variablePrefix)${amount}",
+  "groups": [
+    {
+      "name": "advanced",
+      "displayName": "Advanced",
+      "isExpanded": false
+    }
+  ],
+  "inputs": [
+    {
+      "name": "amount",
+      "label": "Amount UUIDs to generate",
+      "defaultValue": "2",
+      "type": "string"
+    },
+    {
+      "name": "variablePrefix",
+      "label": "Variable prefix",
+      "defaultValue": "UUID_",
+      "type": "string",
+      "helpMarkDown": "Variable prefix to group uuids generation like `MY_UUID_1`, `MY_UUID_2` ..."
+    }
+  ],
+  "execution": {
+    "Node16": {
+      "target": "UUID/v4/UUID.js"
+    }
+  }
+}

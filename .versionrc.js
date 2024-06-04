@@ -29,5 +29,8 @@ module.exports = {
     { "filename": "BuildTasks/NunjucksInline/v4/package.json", "type": "json" },
     { "filename": "BuildTasks/NunjucksInline/v4/task.json", "updater": "task-version.js" },
 
+    { "filename": "BuildTasks/Uuid/v4/package.json", "type": "json" },
+    { "filename": "BuildTasks/Uuid/v4/task.json", "updater": "task-version.js" },
+
   ]
 }

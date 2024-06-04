@@ -3,7 +3,7 @@
   "id": "7775ad48-0f07-43ba-a8e9-3244c14f3d2c",
   "name": "Base64",
   "friendlyName": "Base64",
-  "description": "Encode / Decode Base64 contents",
+  "description": "Encode / Decode Base64 contents (deprecated use NunjucksInline)",
   "helpMarkDown": "",
   "category": "Utility",
   "author": "alelltech",
@@ -72,7 +72,7 @@
     {
       "name": "dest",
       "label": "Destination output reference or expression (not required)",
-      "defaultValue": "",
+      "defaultValue": "ENCODED_64",
       "type": "string"
     }
   ],

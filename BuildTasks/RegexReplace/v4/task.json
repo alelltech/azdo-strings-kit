@@ -3,7 +3,7 @@
   "id": "e33c1b26-ae88-4a81-96eb-96ca9fc69693",
   "name": "RegexReplace",
   "friendlyName": "RegexReplace",
-  "description": "Regex Replace",
+  "description": "Replace values using Regex from ECMAScript, you can build on [regex101.com](regex101.com)",
   "helpMarkDown": "",
   "category": "Utility",
   "author": "alelltech",
