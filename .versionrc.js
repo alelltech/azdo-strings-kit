@@ -23,8 +23,8 @@ module.exports = {
     { "filename": "BuildTasks/RegexReplace/v4/package.json", "type": "json" },
     { "filename": "BuildTasks/RegexReplace/v4/task.json", "updater": "task-version.js" },
 
-    { "filename": "BuildTasks/Nunjucks/v4/package.json", "type": "json" },
-    { "filename": "BuildTasks/Nunjucks/v4/task.json", "updater": "task-version.js" },
+    { "filename": "BuildTasks/NunjucksRender/v4/package.json", "type": "json" },
+    { "filename": "BuildTasks/NunjucksRender/v4/task.json", "updater": "task-version.js" },
 
     { "filename": "BuildTasks/NunjucksInline/v4/package.json", "type": "json" },
     { "filename": "BuildTasks/NunjucksInline/v4/task.json", "updater": "task-version.js" },
