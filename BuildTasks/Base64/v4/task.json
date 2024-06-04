@@ -10,7 +10,7 @@
   "version": {
     "Major": 4,
     "Minor": 4,
-    "Patch": 17
+    "Patch": 18
   },
   "instanceNameFormat": "Base64 ${sourceType}",
   "groups": [
