@@ -51,7 +51,7 @@ This extension provides 1 task!
     regex: '/(hello )(world)/ig'
     substitution: '$1 frank $2'
 
-- task: Nunjucks@4
+- task: NunjucksRender@4
   inputs:
     sourceType: 'text'
     source: '${{ MY_ENV | _classify }}'
