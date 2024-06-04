@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.5.0](https://github.com/alelltech/azdo-strings-kit/compare/v4.4.18...v4.5.0) (2024-06-04)
+
+
+### Features
+
+* add uuid task generation ([fca7d9f](https://github.com/alelltech/azdo-strings-kit/commit/fca7d9f194effbac9017d910e459d7d24ff1c79b))
+
+
+### Others
+
+* **release:** 4.4.18 ([a638ee5](https://github.com/alelltech/azdo-strings-kit/commit/a638ee53bcc25394fc9631ca0712039e66c46474))
+
 ### [4.4.18](https://github.com/alelltech/azdo-strings-kit/compare/v4.4.17...v4.4.18) (2024-06-04)
 
 
