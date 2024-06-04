@@ -9,8 +9,8 @@
   "author": "alelltech",
   "version": {
     "Major": 4,
-    "Minor": 4,
-    "Patch": 14
+    "Minor": 5,
+    "Patch": 4
   },
   "instanceNameFormat": "NunjucksRender",
   "groups": [
