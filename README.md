@@ -12,16 +12,16 @@ This extension provides 1 task!
 * Replace contents using ECMAScript `Regex` expressions from/to **File**, **Variable** or **Raw Text expression**.
 * Proccess [`Nunjucks`](https://mozilla.github.io/nunjucks/templating.html) templates from/to **File**, **Variable** or **Raw Text expression** with [`underscore.string`](https://www.npmjs.com/package/underscore.string) filters **esteroids**.
 * Proccess `Nunjucks` on `inline` operations with [`underscore.string`](https://www.npmjs.com/package/underscore.string) filters **esteroids**.
+* Generate multiple `UUID's` **v4**.
 
-### Plus embeded filters
+
+### Nunjunks Plus embeded filters
 * pascalCase
 * base64
 * encode64
 * decode64
 * encodeHex
 * decodeHex
-
-## Basic queries syntax
 
 ## Usage sample
 
@@ -66,6 +66,12 @@ This extension provides 1 task!
       var pascal_name = BUILD_REPOSITORY_NAME | pascalCase
       var base64 = BUILD_REPOSITORY_NAME | encode64
       echo BUILD_REPOSITORY_NAME | pascalCase
+
+- task: UUID@4
+  inputs:
+    amount: '3'
+    variablePrefix: MY_UUID_VAR_
+
 ```
 
 ## Help us
