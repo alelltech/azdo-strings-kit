@@ -54,7 +54,10 @@ This extension provides 1 task!
 - task: NunjucksRender@4
   inputs:
     sourceType: 'text'
-    source: '${{ MY_ENV | _classify }}'
+    source: |-
+      my static content prefix
+      {{ MY_ENV | _classify }}
+      my static content sufix
     destType: 'text'
   env:
     MY_ENV: my new text
@@ -65,7 +68,7 @@ This extension provides 1 task!
     source: |
       var pascal_name = BUILD_REPOSITORY_NAME | pascalCase
       var base64 = BUILD_REPOSITORY_NAME | encode64
-      echo BUILD_REPOSITORY_NAME | pascalCase
+      echo {{ BUILD_REPOSITORY_NAME | pascalCase }} -- {{ BUILD_REPOSITORY_NAME | encode64 }}
 
 - task: UUID@4
   inputs:

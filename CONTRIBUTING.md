@@ -68,6 +68,25 @@ npm run coverage && npm run release:full && npm run package && npm run pub
 
 ```
 
+### Combinacao windows por partes
+
+```bash
+npm run clean
+npm i --ignore-scripts=true
+
+cd BuildTasks/Base64/v4 && npm i && npm run compile && npm i --omit=dev && cd -
+cd BuildTasks/NunjucksInline/v4 && npm i && npm run compile && npm i --omit=dev && cd -
+cd BuildTasks/NunjucksRender/v4 && npm i && npm run compile && npm i --omit=dev && cd -
+cd BuildTasks/RegexReplace/v4 && npm i && npm run compile && npm i --omit=dev && cd -
+cd BuildTasks/UUID/v4 && npm i && npm run compile && npm i --omit=dev && cd -
+
+npm run release && npx tfx-cli extension create --root . --manifest-globs vss-extension.json
+
+git push --follow-tags origin main
+
+npm run pub
+
+```
 
 ## Debug
 
