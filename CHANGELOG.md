@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.5.6](https://github.com/alelltech/azdo-strings-kit/compare/v4.5.5...v4.5.6) (2024-07-24)
+
+
+### Bug Fixes
+
+* add sintaxes examples ([4468648](https://github.com/alelltech/azdo-strings-kit/commit/44686488a14be613a06d14b5d3aa0d0802eb354f))
+
+
+### Others
+
+* **release:** 4.5.5 ([f397868](https://github.com/alelltech/azdo-strings-kit/commit/f397868ffa5348379935d937dfe3fb71ef2c8efd))
+
 ### [4.5.5](https://github.com/alelltech/azdo-strings-kit/compare/v4.5.4...v4.5.5) (2024-06-04)
 
 
