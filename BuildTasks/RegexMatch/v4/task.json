@@ -10,7 +10,7 @@
   "version": {
     "Major": 4,
     "Minor": 6,
-    "Patch": 0
+    "Patch": 1
   },
   "instanceNameFormat": "Regex Match",
   "groups": [
@@ -51,7 +51,7 @@
       "helpMarkDown": "ECMAScript Regex expression you can build on [regex101.com](regex101.com)"
     },
     {
-      "name": "variablePrefix",
+      "name": "outVarPrefix",
       "label": "Variable prefix for output variable set, like `MY_PREFIX_`*MATCH*.",
       "required": true,
       "defaultValue": "REGEX_",
