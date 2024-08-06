@@ -47,6 +47,9 @@
   ],
   "files": [
     {
+      "path": "BuildTasks/RegexMatch"
+    },
+    {
       "path": "BuildTasks/UUID"
     },
     {
@@ -67,6 +70,16 @@
     }
   ],
   "contributions": [
+    {
+      "id": "RegexMatch",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "BuildTasks/RegexMatch"
+      }
+    },
     {
       "id": "UUID",
       "type": "ms.vss-distributed-task.task",
