@@ -9,8 +9,8 @@
   "author": "alelltech",
   "version": {
     "Major": 4,
-    "Minor": 5,
-    "Patch": 6
+    "Minor": 6,
+    "Patch": 0
   },
   "instanceNameFormat": "Regex Replace",
   "groups": [

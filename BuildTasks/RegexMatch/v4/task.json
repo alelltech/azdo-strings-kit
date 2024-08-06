@@ -1,16 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
   "id": "97450947-4eb7-40aa-a9cd-72d10f9b17b5",
-  "name": "StringKitRegexMatch",
+  "name": "RegexMatch",
   "friendlyName": "Regex Match",
-  "description": "Regex Match",
+  "description": "Matches string values using ECMAScript Regex expressions and fill variables with results.",
   "helpMarkDown": "",
   "category": "Utility",
   "author": "alelltech",
   "version": {
     "Major": 4,
-    "Minor": 5,
-    "Patch": 6
+    "Minor": 6,
+    "Patch": 0
   },
   "instanceNameFormat": "Regex Match",
   "groups": [
@@ -44,26 +44,6 @@
       "helpMarkDown": ""
     },
     {
-      "name": "destType",
-      "label": "Type of destination output",
-      "required": true,
-      "defaultValue": "var",
-      "type": "pickList",
-      "options": {
-        "file": "file",
-        "var": "var",
-        "text": "text"
-      },
-      "helpMarkDown": "Indicate type of **destination output reference**, can be **File**, **Variable** or **Raw Text Expression**",
-      "groupName": "advanced"
-    },
-    {
-      "name": "dest",
-      "label": "Destination output reference or expression",
-      "defaultValue": "",
-      "type": "string"
-    },
-    {
       "name": "regex",
       "label": "Regex",
       "defaultValue": "/hello world/ig",
@@ -71,11 +51,12 @@
       "helpMarkDown": "ECMAScript Regex expression you can build on [regex101.com](regex101.com)"
     },
     {
-      "name": "substitution",
-      "label": "Substitution expression",
-      "defaultValue": "",
+      "name": "variablePrefix",
+      "label": "Variable prefix for output variable set, like `MY_PREFIX_`*MATCH*.",
+      "required": true,
+      "defaultValue": "REGEX_",
       "type": "string",
-      "helpMarkDown": "ECMAScript Regex `substiturion` expression you can build on [regex101.com](regex101.com)"
+      "helpMarkDown": "Variable prefix for output variable set, default is `REGEX_` and available values are `REGEX_`**HAS_MATCH**, `REGEX_`**MATCH** and `REGEX_`**GROUP_0...N**."
     }
   ],
   "execution": {
