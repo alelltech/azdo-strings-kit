@@ -32,6 +32,9 @@ async function run() {
     const sourceContent = await getContent(sourceType, source);
 
     const matchResult = regExp.exec(sourceContent);
+
+    setVariable(`${varPrefix}HAS_MATCH`, Boolean(!!matchResult).toString());
+
     setVariable(`${varPrefix}MATCH`, matchResult[0]);
 
     matchResult.forEach((groupMatch, groupIndex) => {
