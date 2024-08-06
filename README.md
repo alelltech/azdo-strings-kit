@@ -51,6 +51,13 @@ This extension provides 1 task!
     regex: '/(hello )(world)/ig'
     substitution: '$1 frank $2'
 
+- task: RegexMatch@4
+  inputs:
+    sourceType: 'text'
+    source: 'hello world'
+    regex: '/(hello )(world)/ig'
+    variablePrefix: 'HELLO_'
+
 - task: NunjucksRender@4
   inputs:
     sourceType: 'text'

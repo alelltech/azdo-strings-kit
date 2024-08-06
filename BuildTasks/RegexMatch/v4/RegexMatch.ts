@@ -18,7 +18,7 @@ async function run() {
     const source = getInput("source", true);
     const sourceType: SourceType = getInput("sourceType", true) as any;
     const regex = getInput("regex", true) || "";
-    const varPrefix = getInput("variablePrefix", false) || "REGEX_";
+    const outVarPrefix = getInput("outVarPrefix", false) || "REGEX_";
 
     if (!source || !regex) return;
     const parsed = /\/(.+)\/([isdyugm]{0,})/g.exec(regex);
@@ -33,12 +33,12 @@ async function run() {
 
     const matchResult = regExp.exec(sourceContent);
 
-    setVariable(`${varPrefix}HAS_MATCH`, Boolean(!!matchResult).toString());
+    setVariable(`${outVarPrefix}HAS_MATCH`, Boolean(!!matchResult).toString());
 
-    setVariable(`${varPrefix}MATCH`, matchResult[0]);
+    setVariable(`${outVarPrefix}MATCH`, matchResult[0]);
 
     matchResult.forEach((groupMatch, groupIndex) => {
-      setVariable(`${varPrefix}GROUP_${groupIndex}`, groupMatch);
+      setVariable(`${outVarPrefix}GROUP_${groupIndex}`, groupMatch);
     });
   } catch (err: any) {
     setResult(TaskResult.Failed, err.message);
