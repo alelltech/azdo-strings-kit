@@ -56,7 +56,7 @@ This extension provides 1 task!
     sourceType: 'text'
     source: 'hello world'
     regex: '/(hello )(world)/ig'
-    variablePrefix: 'HELLO_'
+    outVarPrefix: 'HELLO_'
 
 - task: NunjucksRender@4
   inputs:
